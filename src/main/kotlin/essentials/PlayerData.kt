@@ -13,6 +13,7 @@ class PlayerData {
     var admin: Boolean = false
     var placecount: Int = 0
     var breakcount: Int = 0
+    var killcount: Int = 0
     var joincount: Int = 0
     var kickcount: Int = 0
     var level: Int = 0
@@ -49,6 +50,7 @@ class PlayerData {
         this.admin = isAdmin
         this.placecount = placecount
         this.breakcount = breakcount
+        this.killcount = killcount
         this.joincount = joincount
         this.kickcount = kickcount
         this.level = level
@@ -81,6 +83,7 @@ class PlayerData {
         map.add("isAdmin", admin)
         map.add("placecount", placecount)
         map.add("breakcount", breakcount)
+        map.add("killcount", killcount)
         map.add("joincount", joincount)
         map.add("kickcount", kickcount)
         map.add("level", level)
@@ -112,6 +115,7 @@ class PlayerData {
         admin = data["isAdmin"].asBoolean()
         placecount = data["placecount"].asInt()
         breakcount = data["breakcount"].asInt()
+        killcount = data["killcount"].asInt()
         joincount = data["joincount"].asInt()
         kickcount = data["kickcount"].asInt()
         level = data["level"].asInt()
